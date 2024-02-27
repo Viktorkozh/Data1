@@ -14,8 +14,8 @@ if __name__ == "__main__":
         try:
             with open(sys.argv[1], "r", encoding="utf-8") as file:
                 lines = file.readlines()[:10]
-                for line in lines:
-                    print(line.strip())
+            for line in lines:
+                print(line.strip())
         except FileNotFoundError:
             print(f"Ошибка: файл '{filename}' не найден.")
         except:
