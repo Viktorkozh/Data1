@@ -8,11 +8,11 @@ if __name__ == "__main__":
 
     with open("is1.txt", "r", encoding="utf-8") as f:
         text = f.read()
-    sentences = text.split('. ')
+    sentences = text.split('. ') + text.split('? ') + text.split('! ')
 
     # Вывод предложений с запятыми.
     for sentence in sentences:
         cnt = 0
         if word in sentence:
             cnt += 1
-        print(sentence, "Искомое слово встретилось:", cnt, "раз(а).")
+        print(sentence, "\t| Искомое слово встретилось:", cnt, "раз(а).")
