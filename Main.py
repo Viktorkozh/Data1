@@ -8,7 +8,7 @@ if __name__ == "__main__":
 
     with open("is1.txt", "r", encoding="utf-8") as f:
         text = f.read()
-        sentences = text.split('. ')
+    sentences = text.split('. ')
 
     # Вывод предложений с запятыми.
     for sentence in sentences:
